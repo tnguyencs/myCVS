@@ -54,7 +54,7 @@ def search():  # Search button is pressed > Perform scraping
         if key == Globals.substring:
             Globals.substring = value  # Set substring to abbreviation for bad state
 
-    finalCheck = entry.capitalize()  # To combat having an invalid input after a valid input
+    finalCheck = entry.title()  # To combat having an invalid input after a valid input
     # If the entry didn't match any of the states OR
     # If the input isn't in the state dictionary
     if (Globals.state is None) or (finalCheck not in Globals.stateDict and finalCheck.upper() not in Globals.stateDict.values()):
