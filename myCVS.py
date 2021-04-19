@@ -121,8 +121,8 @@ resultFrame.pack()
 spacingFrame = ttk.Frame(root,width=15)  # Another spacing frame
 spacingFrame.pack(side=LEFT)
 
-# Hyperlink to schedule with matching text and nice blue color
-scheduleLink=Label(root, text="SCHEDULE APPOINTMENT!", font="Terminus 9 underline", fg='SlateBlue2')
+# Hyperlink to schedule with matching text and nice blue color + matching background since non-theme label
+scheduleLink=Label(root, text="SCHEDULE APPOINTMENT!", font="Terminus 9 underline", fg='SlateBlue2', bg='white smoke')
 scheduleLink.pack(side=BOTTOM)
 scheduleLink.bind("<Button-1>", lambda e: openUrl("https://www.cvs.com/vaccine/intake/store/covid-screener/covid-qns"))
 
