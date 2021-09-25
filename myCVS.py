@@ -1,5 +1,7 @@
 # myCVS - Thomas Nguyen 2021
-
+# Created for HackUIOWA 2021 Hackathon. Demo Video: https://youtu.be/p-8pOtEg8cM
+# Notes: Code is now broken since CVS changed their website. 
+# Also, my use of BeautifulSoup was inefficient, could have grabbed all info in one call and kept info in a global dictionary.
 from ttkthemes import themed_tk as tk
 from tkinter import ttk
 from tkinter import *
